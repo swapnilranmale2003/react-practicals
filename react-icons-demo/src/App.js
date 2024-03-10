@@ -5,6 +5,10 @@ import { MdAccessAlarm } from "react-icons/md";
 import { MdAdb } from "react-icons/md";
 function App() {
   return (
+    <>
+    <h1>
+      React Icons
+    </h1>
     <IconContext.Provider value={{ color: 'blue', size: '10rem' }} >
       {/* if you want to maintain same color and size to react icons then use inside IconContext Provider */}
       <div className="App">
@@ -14,6 +18,7 @@ function App() {
 
       </div>
     </IconContext.Provider>
+    </>
   );
 }
 
