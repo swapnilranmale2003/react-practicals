@@ -9,6 +9,14 @@ return(
   </div>
 )
 }
+const NewNotify = ({closeToast})=>{
+  return(
+  <div>
+    Info New Notification!
+  <button onClick={closeToast}>Close</button>
+  </div>
+  )
+}
 function App() {
   const notify = () => {
     toast('Hello Geeks 4', {
@@ -30,7 +38,7 @@ function App() {
     toast.warning(<CustomToast />, {
       position: "bottom-center"
     })
-    toast('top right',{
+    toast(<NewNotify />,{
       position:"top-right"
     })
   }
