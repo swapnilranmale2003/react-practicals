@@ -1,13 +1,10 @@
 import React from "react";
-function Hello() {
-  let text = "Scaler";
-  function myName() {
-    return "Jordan";
-  }
-  function add (){
-    return 1+3;
-  }
-  return <div>{add()}, {text} dolor.{myName()}</div>;
+function Hello({name, mobile}) {
+  return (
+    <div>
+      <h1>Hello {name} {mobile}</h1>
+    </div>
+  );
 }
 
 export default Hello;
