@@ -2,8 +2,6 @@ import './App.css';
 import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
 import React, { forwardRef } from 'react'
-
-
 // component
 const ColoredComponent = () => {
   return (

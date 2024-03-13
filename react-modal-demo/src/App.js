@@ -6,7 +6,7 @@ function App() {
   const [ModalIsOpen, setModalIsOpen] = useState(false);
   return (
     <div className="App">
-      <button onClick={() => setModalIsOpen(true)}>Open Modal</button>
+      <button onClick={() => setModalIsOpen(false)}>Open Modal</button>
       <Modal isOpen={ModalIsOpen} shouldCloseOnOverlayClick={false} onRequestClose={()=>setModalIsOpen(false)}
       style={
         {
