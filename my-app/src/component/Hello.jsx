@@ -4,7 +4,10 @@ function Hello() {
   function myName() {
     return "Jordan";
   }
-  return <div>Lorem, {text} dolor.{myName()}</div>;
+  function add (){
+    return 1+3;
+  }
+  return <div>{add()}, {text} dolor.{myName()}</div>;
 }
 
 export default Hello;
