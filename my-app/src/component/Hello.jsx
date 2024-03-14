@@ -1,8 +1,21 @@
-import React from "react";
-function Hello({name, mobile}) {
+import React, { useState } from "react";
+import { FaEye } from "react-icons/fa";
+import './Hello.css'
+function Hello() {
+  const[showPass, setShowPass]=useState("false");
+  const toggle = ()=>{
+    setShowPass(!showPass)
+  }
   return (
-    <div>
-      <h1>Hello {name} {mobile}</h1>
+    <div className="password">
+      <div>
+        {" "}
+        <input type={showPass?"text":"password"}  placeholder="Enter password" />
+      </div>
+      <div  onClick={toggle} >
+        {" "}
+        <FaEye size={"2rem"} color="#fff" />
+      </div>
     </div>
   );
 }
