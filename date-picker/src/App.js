@@ -18,8 +18,7 @@ function App() {
         filterDate={date=>date.getDay() !== 6 && date.getDay() !== 0}
         isClearable
         showMonthDropdown
-        showYearDropdown
-        scrollableYearDropdown
+        showYearDropdownat
       />
     </div>
   );
