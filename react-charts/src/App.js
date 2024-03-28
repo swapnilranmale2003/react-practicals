@@ -6,7 +6,7 @@ import LineChart from './component/LineChart';
 function App() {
   return (
     <div className="App">
-    x`x`x``
+
       <LineChart />
    
     </div>
