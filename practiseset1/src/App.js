@@ -1,4 +1,5 @@
 import './App.css';
+import ListPractise from './components/ListPractise';
 
 import UseState from './components/UseState';
 // import Mybutton from './components/Mybutton';
@@ -14,7 +15,8 @@ function App() {
     <div className="App">
       {/* <h1>Welcome  <h1>{user.name}</h1></h1>
       <Mybutton /> */}
-      <UseState />
+      {/* <UseState /> */}
+      <ListPractise />
     </div>
   );
 }
