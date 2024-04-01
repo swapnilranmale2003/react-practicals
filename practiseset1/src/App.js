@@ -1,4 +1,5 @@
 import './App.css';
+import Man from './components/Man';
 import Person from './components/Person';
 // import ListPractise from './components/ListPractise';
 // import UseState from './components/UseState';
@@ -17,7 +18,8 @@ function App() {
       <Mybutton /> */}
       {/* <UseState /> */}
       {/* <ListPractise /> */}
-      <Person  name= "Jordam walke"/>
+      {/* <Person  name= "Jordam walke"/> */}
+      <Man percent = "99" />
     </div>
   );
 }
