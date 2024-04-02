@@ -5,6 +5,9 @@ import ChildA from "./component/ChildA";
 //create,provider,consumer
 //is context api also problamatic
 
+//useContext hooks
+//create, provider, useContext
+
 const data = createContext();
 const data1 = createContext();
 function App() {
@@ -14,11 +17,22 @@ function App() {
   return (
     <div className="App">
       { /* <UseRef /> */}
+
+      {/* contextAPI
       <data.Provider value={name}>
         <data1.Provider value={gender} >
         <ChildA />
         </data1.Provider>
+      </data.Provider> */}
+
+      {/* useContext hooks */}
+      <data.Provider value={name}>
+        <data1.Provider value={gender}>
+        <ChildA />
+        </data1.Provider>
       </data.Provider>
+      
+
     </div>
   );
 }
