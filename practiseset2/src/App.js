@@ -1,12 +1,21 @@
+import { createContext } from "react";
 import "./App.css";
-import UseRef from "./component/UseRef";
-
+import ChildA from "./component/ChildA";
+// import UseRef from "./component/UseRef";
+//create,provider,consumer
+const data = createContext();
 function App() {
+
+  const name = "Swapnil";
   return (
     <div className="App">
-    <UseRef />
+      { /* <UseRef /> */}
+      <data.Provider value={name}>
+        <ChildA />
+      </data.Provider>
     </div>
   );
 }
 
 export default App;
+export { data };
