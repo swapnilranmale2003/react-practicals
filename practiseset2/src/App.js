@@ -1,6 +1,7 @@
 import { createContext } from "react";
 import "./App.css";
 import ChildA from "./component/ChildA";
+import UseMemo from "./component/UseMemo";
 // import UseRef from "./component/UseRef";
 //create,provider,consumer
 //is context api also problamatic
@@ -26,13 +27,14 @@ function App() {
       </data.Provider> */}
 
       {/* useContext hooks */}
-      <data.Provider value={name}>
+      {/* <data.Provider value={name}>
         <data1.Provider value={gender}>
         <ChildA />
         </data1.Provider>
       </data.Provider>
+       */}
       
-
+      <UseMemo />
     </div>
   );
 }
