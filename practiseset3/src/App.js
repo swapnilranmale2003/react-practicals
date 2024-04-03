@@ -9,15 +9,20 @@ import { useState } from 'react';
 
 function App() {
   const [name, setName] = useState("")
-  const[pswd, setPswd]= useState("");
+  const [pswd, setPswd] = useState("");
+  // const handleChnage = (e) => {
+  //   console.log(e.target.value)
+  //   const capsName= (e.target.value).toUpperCase()
+  //   setName(capsName)
+  // }
   const handleChnage = (e) => {
-    console.log(e.target.value)
-    const capsName= (e.target.value).toUpperCase()
-    setName(capsName)
-  }
-  const handlePswd = (e) => {
-    console.log(e.target.value)
-    setPswd(e.target.value)
+    if (e.target.name == "firstName") {
+      const capsName = (e.target.value).toUpperCase()
+      setName(capsName);
+    }
+    else{
+      setPswd(e.target.value);
+    }
   }
 
   return (
@@ -25,9 +30,11 @@ function App() {
       <h1>Controlled and UnControlled Components</h1>
       <form>
         <label>Name</label>
-        <input type="text" value={name} onChange={handleChnage} />
+        <input type="text" name='firstName' value={name} onChange={handleChnage} />
         <label>Password</label>
-        <input type="text" value={pswd} onChange={handlePswd} />
+        {/* <input type="text" value={pswd} onChange={handlePswd} /> */}
+        <input type="text" name='password' value={pswd} onChange={handleChnage} />
+
       </form>
     </div>
   );
