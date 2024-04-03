@@ -1,6 +1,7 @@
 
 import './App.css';
 import { useState } from 'react';
+import UnControlled from './UnControlled/UnControlled';
 
 //1 React form
 //Controlled compo
@@ -27,15 +28,16 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Controlled and UnControlled Components</h1>
+      {/* <h1>Controlled and UnControlled Components</h1>
       <form>
         <label>Name</label>
         <input type="text" name='firstName' value={name} onChange={handleChnage} />
         <label>Password</label>
-        {/* <input type="text" value={pswd} onChange={handlePswd} /> */}
+        <input type="text" value={pswd} onChange={handlePswd} />
         <input type="text" name='password' value={pswd} onChange={handleChnage} />
 
-      </form>
+      </form> */}
+      <UnControlled />
     </div>
   );
 }
