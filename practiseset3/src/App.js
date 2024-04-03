@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react';
 import UnControlled from './Component/UnControlled/UnControlled';
 import Parent from './Component/LiftingState/Parent';
+import Register from './Component/Registration/Register';
 
 //1 React form
 //Controlled compo
@@ -39,7 +40,8 @@ function App() {
 
       </form> */}
       {/* <UnControlled /> */}
-      <Parent />
+      {/* <Parent /> */}
+      <Register />
     </div>
   );
 }
