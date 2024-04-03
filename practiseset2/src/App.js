@@ -2,6 +2,7 @@ import { createContext } from "react";
 import "./App.css";
 import ChildA from "./component/ChildA";
 import UseMemo from "./component/UseMemo";
+import UseCallBack from "./component/UseCallBack";
 // import UseRef from "./component/UseRef";
 //create,provider,consumer
 //is context api also problamatic
@@ -34,7 +35,8 @@ function App() {
       </data.Provider>
        */}
       
-      <UseMemo />
+      {/* <UseMemo /> */}
+      <UseCallBack />
     </div>
   );
 }
