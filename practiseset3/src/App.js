@@ -9,9 +9,15 @@ import { useState } from 'react';
 
 function App() {
   const [name, setName] = useState("")
+  const[pswd, setPswd]= useState("");
   const handleChnage = (e) => {
     console.log(e.target.value)
-    setName(e.target.value)
+    const capsName= (e.target.value).toUpperCase()
+    setName(capsName)
+  }
+  const handlePswd = (e) => {
+    console.log(e.target.value)
+    setPswd(e.target.value)
   }
 
   return (
@@ -20,6 +26,8 @@ function App() {
       <form>
         <label>Name</label>
         <input type="text" value={name} onChange={handleChnage} />
+        <label>Password</label>
+        <input type="text" value={pswd} onChange={handlePswd} />
       </form>
     </div>
   );
