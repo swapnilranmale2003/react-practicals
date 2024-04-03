@@ -4,6 +4,7 @@ import { useState } from 'react';
 import UnControlled from './Component/UnControlled/UnControlled';
 import Parent from './Component/LiftingState/Parent';
 import Register from './Component/Registration/Register';
+import List from './Component/Lists/List';
 
 //1 React form
 //Controlled compo
@@ -41,7 +42,8 @@ function App() {
       </form> */}
       {/* <UnControlled /> */}
       {/* <Parent /> */}
-      <Register />
+      {/* <Register /> */}
+      <List />
     </div>
   );
 }
