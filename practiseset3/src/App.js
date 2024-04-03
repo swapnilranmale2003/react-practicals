@@ -1,7 +1,8 @@
 
 import './App.css';
 import { useState } from 'react';
-import UnControlled from './UnControlled/UnControlled';
+import UnControlled from './Component/UnControlled/UnControlled';
+import Parent from './Component/LiftingState/Parent';
 
 //1 React form
 //Controlled compo
@@ -37,7 +38,8 @@ function App() {
         <input type="text" name='password' value={pswd} onChange={handleChnage} />
 
       </form> */}
-      <UnControlled />
+      {/* <UnControlled /> */}
+      <Parent />
     </div>
   );
 }
