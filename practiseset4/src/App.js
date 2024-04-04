@@ -1,11 +1,15 @@
 
 import './App.css';
-import UseStateWithObject from './Components/UseStateWithObject/UseStateWithObject';
+import TodoList from './Components/TodoList/TodoList';
+import UseStateWithArray from './Components/UseStateWithArray/UseStateWithArray';
+// import UseStateWithObject from './Components/UseStateWithObject/UseStateWithObject';
 //useState hook with object
 function App() {
   return (
     <div className="App">
-     <UseStateWithObject />
+     {/* <UseStateWithObject /> */}
+     {/* <UseStateWithArray /> */}
+     <TodoList />
     </div>
   );
 }
