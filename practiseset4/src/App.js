@@ -1,6 +1,6 @@
 
 import './App.css';
-import UseStateWithObject from './Components/UseStateWithObject';
+import UseStateWithObject from './Components/UseStateWithObject/UseStateWithObject';
 //useState hook with object
 function App() {
   return (
