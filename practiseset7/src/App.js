@@ -1,10 +1,12 @@
 import './App.css';
-import AxiosTutorial from './AxiosTutorial';
+import AxiosPost from './AxiosPost';
+// import AxiosTutorial from './AxiosTutorial';
 
 function App() {
   return (
     <div className="App">
-      <AxiosTutorial />
+      {/* <AxiosTutorial /> */}
+      <AxiosPost />
     </div>
   );
 }
